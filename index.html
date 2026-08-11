@@ -1,15 +1,106 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <title>Website #1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hello Loser</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: white;
+            width: 90%;
+            max-width: 500px;
+            padding: 35px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #74ebd5;
+        }
+
+        button {
+            background-color: #4f46e5;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3730a3;
+            transform: scale(1.05);
+        }
+
+        #pesan {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #4f46e5;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>HELLO LOSER!</h1>
-    <p>SELAMAT DATANG PECUNDANG.</p>
+    <div class="container">
 
-    <button onclick="alert('FUCK YOU!')">
-        Klik Saya
-    </button>
+        <h1>HELLO LOSER 👋</h1>
+
+        <p>SELAMAT DATANG PECUNDANG!</p>
+
+        <img src="foto.jpg" alt="Gambar">
+
+        <br>
+
+        <button onclick="tampilkanPesan()">
+            Klik Saya
+        </button>
+
+        <p id="pesan"></p>
+
+    </div>
+
+    <script>
+        function tampilkanPesan() {
+            document.getElementById("pesan").innerHTML =
+                "Welcome To My Website 😎";
+        }
+    </script>
 
 </body>
 </html>
